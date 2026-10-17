@@ -2,25 +2,22 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &1
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 53
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 13964, guid: 0000000000000000d000000000000000, type: 0}
+  m_Script: {fileID: 13964, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EnablePreReleasePackages: 0
-  m_EnablePackageDependencies: 0
   m_AdvancedSettingsExpanded: 1
   m_ScopedRegistriesSettingsExpanded: 1
   m_SeeAllPackageVersions: 0
-  m_ShowDependencies: 0
-  m_ShowPreviewPackages: 0
-  m_ShowFeaturedPackages: 1
-  m_OneTimeWarningShown: 0
+  m_DismissPreviewPackagesInUse: 0
+  oneTimeWarningShown: 0
   m_Registries:
   - m_Id: main
     m_Name: 
@@ -34,5 +31,6 @@ MonoBehaviour:
   m_RegistryInfoDraft:
     m_Modified: 0
     m_ErrorMessage: 
-    m_UserModificationsInstanceId: -828
-    m_OriginalInstanceId: -830
+    m_UserModificationsInstanceId: -858
+    m_OriginalInstanceId: -860
+  m_LoadAssets: 0
