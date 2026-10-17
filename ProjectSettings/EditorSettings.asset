@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!159 &1
+EditorSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 12
+  m_ExternalVersionControlSupport: Visible Meta Files
+  m_SerializationMode: 2
+  m_LineEndingsForNewScripts: 1
+  m_DefaultBehaviorMode: 0
+  m_PrefabRegularEnvironment: {fileID: 0}
+  m_PrefabUIEnvironment: {fileID: 0}
+  m_SpritePackerMode: 4
+  m_SpritePackerPaddingPower: 1
+  m_Bc7TextureCompressor: 0
+  m_AssetPipelineMode: 1
+  m_RefreshImportMode: 0
+  m_CacheServerMode: 0
+  m_CacheServerEndpoint: 
+  m_CacheServerNamespacePrefix: default
+  m_CacheServerEnableDownload: 1
+  m_CacheServerEnableUpload: 1
+  m_TilemapBufferSizeMB: 16
+  m_TileMapComputeshaderGenerator:
+    fileID: 0
+  m_GITextureCacheMB: 10
+  m_GITextureCacheFolder: GI/Cache
+  m_GITextureCacheEnabled: 1
+  m_GITextureCacheSaveFloatingPoint: 1
+  m_GITextureCacheSaveCompressed: 1
+  m_GITextureCacheCompression: 0
+  m_GITextureCacheCompressionLevel: 6
+  m_AssetPipeline:
+    m_Path:
+      id: 0
+    m_Options: 0
+  m_GraphCache:
+    m_Path:
+      id: 0
+    m_Options: 0
+  m_IPAddress: 
+  m_UserName: 
+  m_Port: 0
+  m_Version: 0
+  m_EnableHeadlessMode: 0
+  m_ProbeSets: []

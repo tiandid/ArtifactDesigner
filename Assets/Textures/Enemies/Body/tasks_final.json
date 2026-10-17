@@ -1,0 +1,62 @@
+[
+  {
+    "id": "enemy_body_01_mortal",
+    "task_id": "[task_id: ] 1440376429-AigcImageTask-afb0cbe54ed444b2f7370cb2358e9fc6t",
+    "output": "/home/work/dumate/d4bdd1afcb8244409470791c70865d6f/workspace/ses_gffe5ece057df9ffeFUHcz0NO4YKCNq/ArtifactDesigner/Assets/Textures/Enemies/Body/enemy_body_01_mortal.png",
+    "status": "completed"
+  },
+  {
+    "id": "enemy_body_02_qi_refining",
+    "task_id": "[task_id: ] 1440376429-AigcImageTask-d93888d840800cbee76020c0b992922ct",
+    "output": "/home/work/dumate/d4bdd1afcb8244409470791c70865d6f/workspace/ses_gffe5ece057df9ffeFUHcz0NO4YKCNq/ArtifactDesigner/Assets/Textures/Enemies/Body/enemy_body_02_qi_refining.png",
+    "status": "completed"
+  },
+  {
+    "id": "enemy_body_03_foundation",
+    "task_id": "[task_id: ] 1440376429-AigcImageTask-7258eebc9bf061c17b792a3b74f2b354t",
+    "output": "/home/work/dumate/d4bdd1afcb8244409470791c70865d6f/workspace/ses_gffe5ece057df9ffeFUHcz0NO4YKCNq/ArtifactDesigner/Assets/Textures/Enemies/Body/enemy_body_03_foundation.png",
+    "status": "completed"
+  },
+  {
+    "id": "enemy_body_04_golden_core",
+    "task_id": "[task_id: ] 1440376429-AigcImageTask-bccad04eca1ab94438f86ee473c6fb25t",
+    "output": "/home/work/dumate/d4bdd1afcb8244409470791c70865d6f/workspace/ses_gffe5ece057df9ffeFUHcz0NO4YKCNq/ArtifactDesigner/Assets/Textures/Enemies/Body/enemy_body_04_golden_core.png",
+    "status": "completed"
+  },
+  {
+    "id": "enemy_body_05_nascent_soul",
+    "task_id": "[task_id: ] 1440376429-AigcImageTask-727382ce3da8b998093e873b64cc9620t",
+    "output": "/home/work/dumate/d4bdd1afcb8244409470791c70865d6f/workspace/ses_gffe5ece057df9ffeFUHcz0NO4YKCNq/ArtifactDesigner/Assets/Textures/Enemies/Body/enemy_body_05_nascent_soul.png",
+    "status": "completed"
+  },
+  {
+    "id": "enemy_body_06_deity",
+    "task_id": "[task_id: ] 1440376429-AigcImageTask-d81e4d6c6986e4b85cea934fe29dcc97t",
+    "output": "/home/work/dumate/d4bdd1afcb8244409470791c70865d6f/workspace/ses_gffe5ece057df9ffeFUHcz0NO4YKCNq/ArtifactDesigner/Assets/Textures/Enemies/Body/enemy_body_06_deity.png",
+    "status": "completed"
+  },
+  {
+    "id": "enemy_body_07_void_refining",
+    "task_id": "[task_id: ] 1440376429-AigcImageTask-c3f5477af775ab457b77b8bae514da01t",
+    "output": "/home/work/dumate/d4bdd1afcb8244409470791c70865d6f/workspace/ses_gffe5ece057df9ffeFUHcz0NO4YKCNq/ArtifactDesigner/Assets/Textures/Enemies/Body/enemy_body_07_void_refining.png",
+    "status": "completed"
+  },
+  {
+    "id": "enemy_body_08_body_integration",
+    "task_id": "[task_id: ] 1440376429-AigcImageTask-13d0e0c3e85185763f000f2e5d3d0b8et",
+    "output": "/home/work/dumate/d4bdd1afcb8244409470791c70865d6f/workspace/ses_gffe5ece057df9ffeFUHcz0NO4YKCNq/ArtifactDesigner/Assets/Textures/Enemies/Body/enemy_body_08_body_integration.png",
+    "status": "completed"
+  },
+  {
+    "id": "enemy_body_09_mahayana",
+    "task_id": "[task_id: ] 1440376429-AigcImageTask-53d23da30dec47174e850f2fcf2a7c5dt",
+    "output": "/home/work/dumate/d4bdd1afcb8244409470791c70865d6f/workspace/ses_gffe5ece057df9ffeFUHcz0NO4YKCNq/ArtifactDesigner/Assets/Textures/Enemies/Body/enemy_body_09_mahayana.png",
+    "status": "completed"
+  },
+  {
+    "id": "enemy_body_10_tribulation",
+    "task_id": "[task_id: ] 1440376429-AigcImageTask-bee1d012832d2fd7b1a568be5d7de94at",
+    "output": "/home/work/dumate/d4bdd1afcb8244409470791c70865d6f/workspace/ses_gffe5ece057df9ffeFUHcz0NO4YKCNq/ArtifactDesigner/Assets/Textures/Enemies/Body/enemy_body_10_tribulation.png",
+    "status": "completed"
+  }
+]

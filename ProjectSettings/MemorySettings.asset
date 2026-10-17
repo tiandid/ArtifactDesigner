@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!387306366 &1
+MemorySettings:
+  m_ObjectHideFlags: 0
+  m_EditorMemorySettings:
+    m_MainAllocatorBlockSize: -1
+    m_MainAllocatorBlockCount: -1
+    m_GITextureCachingMemorySizeInMB: 10
+    m_GITextureCacheFolder: GI/Cache
+    m_GITextureCacheSaveFloatingPoint: 1
+    m_GITextureCacheSaveCompressed: 1
+    m_GITextureCacheCompression: 0
+    m_GITextureCacheCompressionLevel: 6
+    m_GraphCache:
+      m_Path:
+        id: 0
+      m_Options: 0
+    m_AssetPipeline:
+      m_Path:
+        id: 0
+      m_Options: 0
+    m_ProfilerCameraMemorySettings:
+      m_ProfilerCameraMemoryFrameCounts: 0
+      m_ProfilerCameraMemoryFrameCount: 1
+      m_ProfilerCameraMemoryTextureResolution: 256
+      m_ProfilerCameraMemoryFormat: 12
+    m_ProfilerFrameData: 1
