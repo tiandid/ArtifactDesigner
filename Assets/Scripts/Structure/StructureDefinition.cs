@@ -83,7 +83,7 @@ namespace ArtifactDesigner.Structure
             if (OccupancyMask != null)
             {
                 clone.OccupancyMask = new bool[GridSize.Width, GridSize.Height];
-                Array.Copy(OccupancyMask, clone.OccupancyMask, OccupancyMask.Length);
+                System.Array.Copy(OccupancyMask, clone.OccupancyMask, OccupancyMask.Length);
             }
             return clone;
         }

@@ -1,6 +1,9 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using ArtifactDesigner.Core;
+using ArtifactDesigner;
+using ArtifactDesigner.UI;
 
 namespace ArtifactDesigner.Quest
 {

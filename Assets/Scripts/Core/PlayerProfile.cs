@@ -168,7 +168,7 @@ namespace ArtifactDesigner.Core
                 FormulaHelper.BaseDefense(Body),
                 FormulaHelper.PlayerAttackSpeed,
                 FormulaHelper.PlayerMoveSpeed,
-                attackRange: 3f,
+                3f,
                 mana: FormulaHelper.PlayerMaxMana(Qi));
             // 同步蓝量（0.0.3 新增）
             player.maxMana = FormulaHelper.PlayerMaxMana(Qi);

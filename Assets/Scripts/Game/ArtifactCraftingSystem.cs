@@ -5,6 +5,7 @@ using ArtifactDesigner.Artifact;
 using ArtifactDesigner.Core;
 using ArtifactDesigner.Energy;
 using ArtifactDesigner.Quest;
+using ArtifactDesigner;
 
 namespace ArtifactDesigner.Game
 {
@@ -24,7 +25,7 @@ namespace ArtifactDesigner.Game
 
         // 玩家当前拥有的炼器产物（局内临时，不持久化到 PlayerProfile）
         public ArtifactPart CurrentSpiritCore { get; private set; }
-        public ArtifactBlank CurrentBlank { get; private set; }
+        public ArtifactBlank CurrentBlank { get; set; }
         public List<ArtifactPart> CurrentThrusters { get; private set; } = new List<ArtifactPart>();
         public ArtifactPart CurrentSkillStructure { get; private set; }
         public bool EnergyLineConnected { get; private set; }
@@ -177,7 +178,7 @@ namespace ArtifactDesigner.Game
 
             // 构建能量网络：灵核为 Core，推进器为 Consumer
             var network = new EnergyNetwork();
-            var coreNode = new EnergyNode("core_0", EnergyNodeType.Core, CurrentSpiritCore.spiritOutput, CurrentSpiritCore.partId);
+            var coreNode = new EnergyNode("core_0", EnergyNodeType.SpiritCore, CurrentSpiritCore.spiritOutput, CurrentSpiritCore.partId);
             network.AddNode(coreNode);
 
             for (int i = 0; i < CurrentThrusters.Count; i++)

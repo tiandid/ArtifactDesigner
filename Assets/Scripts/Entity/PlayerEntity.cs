@@ -1,6 +1,7 @@
 using UnityEngine;
 using ArtifactDesigner.Combat;
 using ArtifactDesigner.Core;
+using ArtifactDesigner;
 
 namespace ArtifactDesigner.Entity
 {
@@ -43,7 +44,7 @@ namespace ArtifactDesigner.Entity
                  FormulaHelper.BaseDefense(body),
                  FormulaHelper.PlayerAttackSpeed,
                  FormulaHelper.PlayerMoveSpeed,
-                 attackRange: 3f,
+                 3f,
                  mana: profile != null ? FormulaHelper.PlayerMaxMana(profile.Qi) : 0);
             faction = Faction.Player;
             radius = 1f;
@@ -79,7 +80,7 @@ namespace ArtifactDesigner.Entity
 
         private void OnEnable()
         {
-            GameEvents.OnEntitySpawned?.Invoke(this);
+            GameEvents.RaiseEntitySpawned(this);
             // 0.0.9：注册到碰撞管理器
             if (CollisionManager.Instance != null)
                 CollisionManager.Instance.Register(this);
@@ -161,14 +162,14 @@ namespace ArtifactDesigner.Entity
             if (profile != null) profile.TotalDeaths++;
             base.Die();
             respawnTimer = respawnDelay;
-            GameEvents.OnPlayerDied?.Invoke(this);
+            GameEvents.RaisePlayerDied(this);
         }
 
         private void Respawn()
         {
             currentHp = maxHp;
             lockedTarget = null;
-            GameEvents.OnPlayerRespawned?.Invoke(this);
+            GameEvents.RaisePlayerRespawned(this);
         }
     }
 }

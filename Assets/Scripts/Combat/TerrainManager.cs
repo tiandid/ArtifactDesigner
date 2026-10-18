@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using ArtifactDesigner.Core;
 using ArtifactDesigner.Entity;
+using ArtifactDesigner;
 
 namespace ArtifactDesigner.Combat
 {

@@ -364,15 +364,15 @@ namespace ArtifactDesigner.Game
 
         private bool IsGenerating(ElementType a, ElementType b)
         {
-            int idxA = Array.IndexOf(GENERATE_CYCLE, a);
-            int idxB = Array.IndexOf(GENERATE_CYCLE, b);
+            int idxA = System.Array.IndexOf(GENERATE_CYCLE, a);
+            int idxB = System.Array.IndexOf(GENERATE_CYCLE, b);
             return (idxA + 1) % 5 == idxB;
         }
 
         private bool IsOvercoming(ElementType a, ElementType b)
         {
-            int idxA = Array.IndexOf(OVERCOME_CYCLE, a);
-            int idxB = Array.IndexOf(OVERCOME_CYCLE, b);
+            int idxA = System.Array.IndexOf(OVERCOME_CYCLE, a);
+            int idxB = System.Array.IndexOf(OVERCOME_CYCLE, b);
             return (idxA + 1) % 5 == idxB;
         }
 

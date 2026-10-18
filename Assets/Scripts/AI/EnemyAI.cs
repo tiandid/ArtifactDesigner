@@ -3,6 +3,7 @@ using UnityEngine;
 using ArtifactDesigner.Combat;
 using ArtifactDesigner.Core;
 using ArtifactDesigner.Entity;
+using ArtifactDesigner;
 
 namespace ArtifactDesigner.AI
 {

@@ -87,7 +87,7 @@ namespace ArtifactDesigner.Entity
             if (!IsAlive || amount <= 0) return false;
             currentHp = Mathf.Max(0, currentHp - amount);
             OnDamaged?.Invoke(this, amount);
-            GameEvents.OnEntityDamaged?.Invoke(this, amount, source);
+            GameEvents.RaiseEntityDamaged(this, amount, source);
             if (currentHp == 0)
             {
                 Die();
@@ -108,7 +108,7 @@ namespace ArtifactDesigner.Entity
             if (!IsAlive) return;
             currentHp = 0;
             OnDied?.Invoke(this);
-            GameEvents.OnEntityDied?.Invoke(this);
+            GameEvents.RaiseEntityDied(this);
         }
     }
 

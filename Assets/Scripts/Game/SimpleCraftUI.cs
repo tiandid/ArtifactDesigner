@@ -1,6 +1,7 @@
 using UnityEngine;
 using ArtifactDesigner.Core;
 using ArtifactDesigner.Quest;
+using ArtifactDesigner.Artifact;
 
 namespace ArtifactDesigner.Game
 {

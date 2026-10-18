@@ -1,5 +1,6 @@
 using UnityEngine;
 using ArtifactDesigner.Core;
+using ArtifactDesigner.Combat;
 
 namespace ArtifactDesigner.Entity
 {
@@ -17,7 +18,7 @@ namespace ArtifactDesigner.Entity
             if (maxHp == 100 && currentHp == 100)
             {
                 // 首次启动时按配置初始化（默认从 BattleManager 注入亦可）
-                Init(crystalMaxHp, attack: 0, def: 0, atkSpeed: 0f, moveSpd: 0f, range: 0.1f);
+                Init(crystalMaxHp, 0, 0, 0f, 0f, 0.1f);
             }
             faction = Faction.Crystal;
             radius = 1.5f;
@@ -25,7 +26,7 @@ namespace ArtifactDesigner.Entity
 
         private void OnEnable()
         {
-            GameEvents.OnEntitySpawned?.Invoke(this);
+            GameEvents.RaiseEntitySpawned(this);
             // 0.0.9：注册到碰撞管理器
             if (CollisionManager.Instance != null)
                 CollisionManager.Instance.Register(this);
@@ -42,7 +43,7 @@ namespace ArtifactDesigner.Entity
             bool took = base.TakeDamage(amount, source);
             if (took)
             {
-                GameEvents.OnCrystalDamaged?.Invoke(this, amount);
+                GameEvents.RaiseCrystalDamaged(this, amount);
             }
             return took;
         }
@@ -50,7 +51,7 @@ namespace ArtifactDesigner.Entity
         public override void Die()
         {
             base.Die();
-            GameEvents.OnCrystalDestroyed?.Invoke(this);
+            GameEvents.RaiseCrystalDestroyed(this);
         }
     }
 }

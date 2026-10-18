@@ -4,6 +4,8 @@ using ArtifactDesigner.Combat;
 using ArtifactDesigner.Core;
 using System.Collections.Generic;
 using System.Linq;
+using ArtifactDesigner;
+using ArtifactDesigner.Quest;
 
 namespace ArtifactDesigner.Entity
 {
@@ -62,7 +64,7 @@ namespace ArtifactDesigner.Entity
             float moveSpd = bossFlag ? FormulaHelper.EnemyMoveSpeed * 0.8f : FormulaHelper.EnemyMoveSpeed;
             float range = bossFlag ? 2.5f : 1.6f;
 
-            unit.Init(hp, atk, def, atkSpd, moveSpd, attackRange: range);
+            unit.Init(hp, atk, def, atkSpd, moveSpd, range);
             unit.faction = Faction.Enemy;
             unit.ai = go.AddComponent<EnemyAI>();
             unit.ai.owner = unit;
@@ -75,8 +77,8 @@ namespace ArtifactDesigner.Entity
 
         private void OnEnable()
         {
-            GameEvents.OnEntitySpawned?.Invoke(this);
-            GameEvents.OnEnemySpawned?.Invoke(this);
+            GameEvents.RaiseEntitySpawned(this);
+            GameEvents.RaiseEnemySpawned(this);
         }
 
         /// <summary>开战时尝试触发分身（由 EnemyAI 调用）。</summary>
@@ -338,7 +340,7 @@ namespace ArtifactDesigner.Entity
                 return;
             }
 
-            GameEvents.OnEnemyKilled?.Invoke(this);
+            GameEvents.RaiseEnemyKilled(this);
             if (GameManager.Instance != null)
             {
                 GameManager.Instance.UnregisterEnemy(this);

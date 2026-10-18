@@ -5,6 +5,8 @@ using ArtifactDesigner.Entity;
 using ArtifactDesigner.Quest;
 using ArtifactDesigner.UI;
 using ArtifactDesigner.Array;
+using ArtifactDesigner.Combat;
+using ArtifactDesigner.Game;
 
 namespace ArtifactDesigner
 {

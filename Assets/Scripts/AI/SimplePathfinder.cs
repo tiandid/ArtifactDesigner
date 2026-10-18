@@ -1,6 +1,7 @@
 using UnityEngine;
 using ArtifactDesigner.Core;
 using ArtifactDesigner.Entity;
+using ArtifactDesigner.Combat;
 
 namespace ArtifactDesigner.AI
 {

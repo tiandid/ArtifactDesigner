@@ -137,7 +137,7 @@ namespace ArtifactDesigner.Energy
                 {
                     var n = GetNode(id);
                     if (n == null) continue;
-                    if (n.nodeType == EnergyNodeType.Core && n.isActive)
+                    if (n.nodeType == EnergyNodeType.SpiritCore && n.isActive)
                         supply += n.energyCapacity;
                     if (n.nodeType == EnergyNodeType.Consumer && n.isActive)
                         consumers.Add(n);
@@ -191,7 +191,7 @@ namespace ArtifactDesigner.Energy
             // 返回一个可达核心作为供电来源信息（仅用于展示）
             foreach (var node in _nodes.Values)
             {
-                if (node.nodeType != EnergyNodeType.Core || !node.isActive) continue;
+                if (node.nodeType != EnergyNodeType.SpiritCore || !node.isActive) continue;
                 if (IsReachable(node.nodeId, consumerNodeId))
                 {
                     poweredCore = node;
